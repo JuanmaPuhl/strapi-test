@@ -17,6 +17,8 @@ const config = {
   head: {
     favicon: geome7ricLogo,
   },
+  tutorials: false,
+  notifications: { releases: false },
 };
 
 const bootstrap = (app) => {

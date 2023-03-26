@@ -1,0 +1,27 @@
+import Geome7ricLogo from "./images/geome7ric.png";
+
+const pluginId = "randomAssId";
+export default {
+  register(app) {
+    app.addMenuLink({
+      to: `/plugins/pruebaGeome7rica`,
+      icon: Geome7ricLogo,
+      intlLabel: {
+        id: `${pluginId}.plugin.name`,
+        defaultMessage: "Prueba Geome7rica",
+      },
+      Component: async () => {
+        const component = await import(
+          /* webpackChunkName: "pruebaGeome7rica" */ "./pages/App"
+        );
+        return component;
+      },
+      permissions: [],
+    });
+    app.registerPlugin({
+      id: pluginId,
+      name,
+    });
+  },
+  bootstrap() {},
+};
