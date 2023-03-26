@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_texto_presentacions",
+  "info": {
+    "displayName": "Presentación"
+  },
+  "options": {},
+  "attributes": {
+    "Seguros": {
+      "displayName": "seguro",
+      "type": "component",
+      "repeatable": false,
+      "component": "seccion.seguro"
+    }
+  }
+}

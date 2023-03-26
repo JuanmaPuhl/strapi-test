@@ -1,32 +1,22 @@
+import geome7ricLogo from "./extensions/images/geome7ric.png";
+
 const config = {
-  locales: [
-    // 'ar',
-    // 'fr',
-    // 'cs',
-    // 'de',
-    // 'dk',
-    "es",
-    // 'he',
-    // 'id',
-    // 'it',
-    // 'ja',
-    // 'ko',
-    // 'ms',
-    // 'nl',
-    // 'no',
-    // 'pl',
-    // 'pt-BR',
-    // 'pt',
-    // 'ru',
-    // 'sk',
-    // 'sv',
-    // 'th',
-    // 'tr',
-    // 'uk',
-    // 'vi',
-    // 'zh-Hans',
-    // 'zh',
-  ],
+  locales: ["es"],
+  defaultLocale: "es",
+  translations: {
+    es: {
+      "app.components.LeftMenu.navbrand.title": "Panel de control",
+    },
+  },
+  auth: {
+    logo: geome7ricLogo,
+  },
+  menu: {
+    logo: geome7ricLogo,
+  },
+  head: {
+    favicon: geome7ricLogo,
+  },
 };
 
 const bootstrap = (app) => {

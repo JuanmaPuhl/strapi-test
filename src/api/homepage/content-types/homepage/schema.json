@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Pagina principal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "encabezado": {
+      "type": "string",
+      "required": true,
+      "default": "Encabezadode prueba"
+    },
+    "Contenido": {
+      "type": "dynamiczone",
+      "components": [
+        "texto.presentacion"
+      ]
+    }
+  }
+}
