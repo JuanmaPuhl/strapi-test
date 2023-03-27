@@ -55,7 +55,7 @@ const HomePage = () => {
         }
         as="h2"
       />
-      <Box>
+      <Box padding={8}>
         <Table colCount={COL_COUNT} rowCount={ROW_COUNT}>
           <Thead>
             <Tr>
